@@ -4,14 +4,12 @@ import Header from "./Header.js";
 import About from "./About.js";
 import ArticleList from "./ArticleList.js";
 
-console.log(blogData);
-
 function App() {
   return (
     <div className="App">
       <Header name={blogData.name}/>
-      <About src = {blogData.image} about={blogData.about}/>
-      <ArticleList articleArray = {blogData.posts}/>
+      <About image = {blogData.image} about={blogData.about}/>
+      <ArticleList posts = {blogData.posts}/>
     </div>
   );
 }

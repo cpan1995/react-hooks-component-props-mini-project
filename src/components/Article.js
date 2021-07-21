@@ -1,7 +1,6 @@
-import React from "react";
 
 function Article({title, date="January 1, 1970", preview}){
-    console.log("hi")
+    
     return (
         <article>
             <h3>{title}</h3>
